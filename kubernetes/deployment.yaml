@@ -1,4 +1,4 @@
-apiVersion: apps/v1
+oapiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ecsdemo-nodejs
@@ -6,7 +6,7 @@ metadata:
     app: ecsdemo-nodejs
   namespace: default
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: ecsdemo-nodejs
